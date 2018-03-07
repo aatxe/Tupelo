@@ -2,7 +2,8 @@
   "name": "pdgnc",
   "version": "1.0.0",
   "description": "irc for the web, powered by rust",
-  "author": "Aaron Weiss <awe@pdgn.co>",
+  "author": "Aaron Weiss <awe@pdgn.co> (https://aaronweiss.us/)",
+  "license": "AGPL-3.0",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
