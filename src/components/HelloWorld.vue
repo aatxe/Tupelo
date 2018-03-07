@@ -99,7 +99,7 @@ export default {
 }
 
 #server-list, #chat-buffer #messages, #chan-list {
-  padding: 0.5em;
+  padding: 0.1em 0.5em;
 }
 
 #chan-list {
@@ -155,7 +155,7 @@ export default {
 
 #chat-buffer #messages {
   align-self: end;
-  max-height: calc(100% - 1em);
+  max-height: calc(100% - 0.2em);
   overflow: scroll;
 }
 
