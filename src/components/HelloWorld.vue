@@ -118,7 +118,7 @@ export default {
 }
 
 #server-list, #chan-list {
-    background: #2B2C31;
+    background: #2F3136;
     z-index: 2;
 }
 
@@ -159,25 +159,29 @@ export default {
 }
 
 #chat-buffer {
-    display: grid;
-    grid-template-rows: 2.2em auto 4em;
+    background: #35393F;
+    overflow: hidden;
+    max-height: 100%;
 }
 
 #chat-buffer #topic {
-    align-self: top;
     padding: 0.5em;
-    overflow: hidden;
-    background: #2F3136;
-    border-bottom: 1px solid #232428;
-    box-shadow: 1px 1px 1px #232428;
+    background: #353940;
+    border-bottom: 1px solid #2A2C30;
+    box-shadow: 0 1px 1px #323439;
+    height: 1.2em;
     z-index: 1;
 }
 
 #chat-buffer #messages {
     align-self: end;
-    max-height: 100%;
     overflow: scroll;
-    background: #303339;
+    max-height: calc(100vh - 7.4em);
+    padding: 0.5em 2em;
+}
+
+#chat-input {
+    padding: 1em;
 }
 
 .message-time::before {
@@ -194,11 +198,6 @@ export default {
 
 .message-author::after {
     content: ")";
-}
-
-#chat-input {
-    padding: 1em;
-    background: #35393F;
 }
 
 #chat-input input {
