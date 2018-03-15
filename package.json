@@ -13,6 +13,9 @@
     "electron": "electron ./src/window.js"
   },
   "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.4",
+    "@fortawesome/fontawesome-free-solid": "^5.0.8",
+    "@fortawesome/vue-fontawesome": "^0.0.22",
     "electron": "^1.8.3",
     "normalize.css": "^8.0.0",
     "vue": "^2.5.2",

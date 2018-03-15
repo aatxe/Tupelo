@@ -3,14 +3,16 @@
   <section id="server-list">
     <ul>
       <li class="server">
-        FyreChat
+        <font-awesome-icon :icon="server"/>
+        <span class="server-name">FyreChat</span>
         <ul>
           <li class="channel">#vana</li>
           <li class="channel">#vana-commits</li>
         </ul>
       </li>
       <li>
-        PdgnCo
+        <font-awesome-icon :icon="server"/>
+        <span class="server-name">PdgnCo</span>
         <ul>
           <li class="channel current">#pdgn</li>
           <li class="channel">#merveille</li>
@@ -57,8 +59,22 @@
 </template>
 
 <script>
+import FontAwesomeIcon from '@fortawesome/vue-fontawesome'
+import { faServer } from '@fortawesome/fontawesome-free-solid'
+
 export default {
   name: 'HelloWorld',
+
+  components: {
+    FontAwesomeIcon
+  },
+
+  computed: {
+    server () {
+      return faServer
+    }
+  },
+
   data: function () {
     return {
       messages: Array(100).fill().map((_, i) => {
