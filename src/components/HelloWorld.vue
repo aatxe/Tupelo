@@ -12,7 +12,7 @@
         <li>
           PdgnCo
           <ul>
-            <li class="channel">#pdgn</li>
+            <li class="channel current">#pdgn</li>
             <li class="channel">#merveille</li>
           </ul>
         </li>
@@ -69,123 +69,150 @@ export default {
 
 <style>
 #root {
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr 6fr;
-  grid-template-rows: 15fr 1fr;
-}
-
-#server-list {
-  border-right: 1px solid black;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 15fr 1fr;
+    color: #ccc;
 }
 
 #server-list ul {
-  list-style: none;
-  margin: 0;
-  padding: 1em;
+    list-style: none;
+    padding: 0;
+    margin: 1em 0;
+    color: #aaa;
 }
 
 #server-list ul li.server {
-  margin-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 #server-list ul ul {
-  padding: 0.3em 1em;
+    margin: 0.5em 0.2em;
+}
+
+#server-list li.channel {
+    padding: 0.5em;
+    margin: 0.2em 0;
+}
+
+#server-list .channel:hover {
+    background: #353940;
+    border-radius: 0.2em;
+    color: #bbb;
+}
+
+#server-list .channel.current {
+    font-weight: bold;
+    background: #3C4148;
+    border-radius: 0.2em;
+    color: #ccc;
 }
 
 #buffer-view {
-  display: grid;
-  grid-template-columns: 6fr 1fr;
+    display: grid;
+    grid-template-columns: 6fr 1fr;
 }
 
 #server-list, #chat-buffer #messages, #chan-list {
-  padding: 0.1em 0.5em;
+    padding: 0.1em 0.5em;
 }
 
-#chan-list {
-  border-left: 1px solid black;
+#server-list, #chan-list {
+    background: #2B2C31;
+    z-index: 2;
 }
 
 #chan-list ul {
-  list-style: none;
-  margin: 0;
-  padding: 1em;
+    list-style: none;
+    margin: 0;
+    padding: 1em;
 }
 
 #chan-list li {
-  margin: 0.1em 0;
+    margin: 0.3em 0;
 }
 
 #chan-list .role, #chan-list .nickname {
-  display: inline-block;
-  vertical-align: middle;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 #chan-list .role {
-  display: inline-grid;
-  justify-content: center;
-  align-content: center;
-  border-radius: 0.3em;
-  width: 1.2em;
-  height: 1.2em;
-  background: #eee;
-  color: white;
-  font-weight: bold;
+    display: inline-grid;
+    justify-content: center;
+    align-content: center;
+    border-radius: 0.3em;
+    width: 1.2em;
+    height: 1.2em;
+    background: #ccc;
+    color: white;
+    font-weight: bold;
 }
 
 #chan-list .role-voice {
-  background: #7eadff;
+    background: #7eadff;
+    background: #0099E0;
 }
 
 #chan-list .role-voice::after {
-  content: '+';
+    content: '+';
 }
 
 #chat-buffer {
-  display: grid;
-  grid-template-rows: 2.2em auto;
+    display: grid;
+    grid-template-rows: 2.2em auto;
 }
 
 #chat-buffer #topic {
-  align-self: top;
-  padding: 0.5em;
-  border-bottom: 1px solid black;
-  overflow: hidden;
+    align-self: top;
+    padding: 0.5em;
+    overflow: hidden;
+    background: #2F3136;
+    border-bottom: 1px solid #232428;
+    box-shadow: 1px 1px 1px #232428;
+    z-index: 1;
 }
 
 #chat-buffer #messages {
-  align-self: end;
-  max-height: calc(100% - 0.2em);
-  overflow: scroll;
+    align-self: end;
+    max-height: calc(100% - 0.2em);
+    overflow: scroll;
+    background: #303339;
 }
 
 .message-time::before {
-  content: "[";
+    content: "[";
 }
 
 .message-time::after {
-  content: "]";
+    content: "]";
 }
 
 .message-author::before {
-  content: "(";
+    content: "(";
 }
 
 .message-author::after {
-  content: ")";
+    content: ")";
 }
 
 #chat-input {
-  grid-column: span 2;
-  padding: 1em;
-  border-top: 1px solid black;
+    grid-column: span 2;
+    padding: 1em;
+    background: #35393F;
 }
 
 #chat-input input {
-  width: calc(100% - 2em);
-  border: 0;
-  background: #eee;
-  padding: 0.5em 1em;
-  border-radius: 0.3em;
+    width: calc(100% - 2em);
+    border: 0;
+    padding: 0.5em 1em;
+    border-radius: 0.3em;
+    background: #474B53;
+    color: #cccccc;
+}
+
+#chat-input input::placeholder {
+    color: #aaaaaa;
 }
 </style>
