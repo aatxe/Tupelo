@@ -1,39 +1,42 @@
 <template>
-  <section id="root">
-    <section id="server-list">
-      <ul>
-        <li class="server">
-          FyreChat
-          <ul>
-            <li class="channel">#vana</li>
-            <li class="channel">#vana-commits</li>
-          </ul>
-        </li>
-        <li>
-          PdgnCo
-          <ul>
-            <li class="channel current">#pdgn</li>
-            <li class="channel">#merveille</li>
-          </ul>
-        </li>
-      </ul>
-    </section>
-    <section id="buffer-view">
-      <section id="chat-buffer">
-        <section id="topic">
-          PdgnCo: https://pdgn.co/ | Canary: https://pdgn.co/canary.txt | Stats: http://ircstats.wogloms.com/pisg/pdgn
-        </section>
-        <section id="messages">
-          <div class="message" v-for="msg in messages" :key="msg.id">
-            <span class="message-time">{{ msg.time }}</span>
-            <span class="message-author">{{ msg.author }}</span>
-            <span class="message-body">{{ msg.content }}</span>
-          </div>
-        </section>
-      </section>
-      <section id="chan-list">
+<section id="root">
+  <section id="server-list">
+    <ul>
+      <li class="server">
+        FyreChat
         <ul>
-          <li class="user">
+          <li class="channel">#vana</li>
+          <li class="channel">#vana-commits</li>
+        </ul>
+      </li>
+      <li>
+        PdgnCo
+        <ul>
+          <li class="channel current">#pdgn</li>
+          <li class="channel">#merveille</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+  <section id="buffer-view">
+    <section id="chat-buffer">
+      <section id="topic">
+        PdgnCo: https://pdgn.co/ | Canary: https://pdgn.co/canary.txt | Stats: http://ircstats.wogloms.com/pisg/pdgn
+      </section>
+      <section id="messages">
+        <div class="message" v-for="msg in messages" :key="msg.id">
+          <span class="message-time">{{ msg.time }}</span>
+          <span class="message-author">{{ msg.author }}</span>
+          <span class="message-body">{{ msg.content }}</span>
+        </div>
+      </section>
+      <section id="chat-input">
+        <input placeholder="Send message...">
+      </section>
+    </section>
+    <section id="chan-list">
+      <ul>
+        <li class="user">
             <div class="role role-voice"></div>
             <div class="nickname">awe</div>
           </li>
@@ -47,9 +50,6 @@
           </li>
         </ul>
       </section>
-    </section>
-    <section id="chat-input">
-      <input placeholder="Send message...">
     </section>
   </section>
 </template>
@@ -72,7 +72,6 @@ export default {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 6fr;
-    grid-template-rows: 15fr 1fr;
     color: #ccc;
 }
 
@@ -161,7 +160,7 @@ export default {
 
 #chat-buffer {
     display: grid;
-    grid-template-rows: 2.2em auto;
+    grid-template-rows: 2.2em auto 4em;
 }
 
 #chat-buffer #topic {
@@ -176,7 +175,7 @@ export default {
 
 #chat-buffer #messages {
     align-self: end;
-    max-height: calc(100% - 0.2em);
+    max-height: 100%;
     overflow: scroll;
     background: #303339;
 }
@@ -198,7 +197,6 @@ export default {
 }
 
 #chat-input {
-    grid-column: span 2;
     padding: 1em;
     background: #35393F;
 }
