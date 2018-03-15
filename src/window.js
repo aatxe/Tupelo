@@ -11,8 +11,8 @@ const start = function() {
     title: 'WINDOW TITLE HERE',
     width: 1100, height: 730,
     autoHideMenuBar: false,
-    titleBarStyle: 'hiddenInset',
-    // frame: false
+    titleBarStyle: 'hidden',
+    frame: false
   })
 
   // load page

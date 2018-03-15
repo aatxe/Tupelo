@@ -1,5 +1,10 @@
 <template>
 <section id="root">
+  <section id="title-bar">
+    <section id="preferences">
+      <font-awesome-icon :icon="gear"/>
+    </section>
+  </section>
   <section id="server-list">
     <ul>
       <li class="server">
@@ -60,7 +65,7 @@
 
 <script>
 import FontAwesomeIcon from '@fortawesome/vue-fontawesome'
-import { faServer } from '@fortawesome/fontawesome-free-solid'
+import { faCog, faServer } from '@fortawesome/fontawesome-free-solid'
 
 export default {
   name: 'HelloWorld',
@@ -70,6 +75,10 @@ export default {
   },
 
   computed: {
+    gear () {
+      return faCog
+    },
+
     server () {
       return faServer
     }
@@ -90,12 +99,23 @@ export default {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1.5em auto;
     color: #ccc;
     background: #2F3136;
 }
 
-#server-list {
-    margin-top: 1.5em;
+#title-bar {
+    grid-column: span 2;
+    background: #202225;
+    /* background: #2A2C31; */
+    height: 1.5em;
+    display: grid;
+}
+
+#preferences {
+    align-self: center;
+    justify-self: right;
+    padding: 0.25em 0.4em;
 }
 
 #server-list ul {
@@ -112,7 +132,7 @@ export default {
 }
 
 #server-list ul ul {
-    margin: 0.5em 0.2em;
+    margin: 0.5em 0;
 }
 
 #server-list li.channel {
@@ -145,6 +165,8 @@ export default {
 #server-list, #chan-list {
     background: #2F3136;
     z-index: 2;
+    overflow-y: scroll;
+    margin: 0 0.2em;
 }
 
 #chan-list ul {
@@ -212,7 +234,7 @@ export default {
 #chat-buffer #messages {
     align-self: end;
     overflow-y: scroll;
-    max-height: calc(100vh - 7.8em);
+    max-height: calc(100vh - 10.2em);
     margin: 0.2em;
     padding: 0.5em 2em;
 }
