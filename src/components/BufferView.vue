@@ -1,0 +1,27 @@
+<template>
+<section id="buffer-view">
+  <ChatBuffer/>
+  <UserList/>
+</section>
+</template>
+
+<script>
+import ChatBuffer from '@/components/ChatBuffer'
+import UserList from '@/components/UserList'
+
+export default {
+  name: 'BufferView',
+
+  components: {
+    ChatBuffer,
+    UserList
+  }
+}
+</script>
+
+<style lang="stylus">
+#buffer-view
+  height: 100vh
+  display: grid
+  grid-template-columns: 6fr 1fr;
+</style>
