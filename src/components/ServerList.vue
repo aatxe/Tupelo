@@ -48,8 +48,21 @@
 </template>
 
 <script>
+import FontAwesomeIcon from '@fortawesome/vue-fontawesome'
+import { faServer } from '@fortawesome/fontawesome-free-solid'
+
 export default {
-  name: 'ServerList'
+  name: 'ServerList',
+
+  components: {
+    FontAwesomeIcon
+  },
+
+  computed: {
+    server () {
+      return faServer
+    }
+  }
 }
 </script>
 
