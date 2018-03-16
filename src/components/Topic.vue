@@ -18,7 +18,7 @@ export default {
 
 #topic
   display: grid
-  height: topbar-height !important
+  flex: 0 0 topbar-height
   background: topic-bg-color
   border-bottom: topbar-border solid #2A2C30
   box-shadow: 0 1px 1px topbar-shadow-color

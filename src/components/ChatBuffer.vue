@@ -37,8 +37,6 @@ export default {
 <style lang="stylus">
 @require '../vars'
 
-topbar-total-size = topbar-height - (2 * topbar-border)
-
 #chat-buffer
   background: buffer-bg-color
   -webkit-app-region: no-drag
@@ -48,11 +46,12 @@ topbar-total-size = topbar-height - (2 * topbar-border)
 
 #buffer-content
   height: 100%
-  width: 6fr
   align-self: end
   overflow-y: scroll
   margin: 0.2em
   padding: 0.5em 2em
+  /* width is less the width changes made by padding and margin */
+  width: calc(100% - 4.4em)
 
 .message-time
   &::before
