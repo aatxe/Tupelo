@@ -22,11 +22,18 @@ export default {
   background: topic-bg-color
   border-bottom: topbar-border solid #2A2C30
   box-shadow: 0 1px 1px topbar-shadow-color
+  white-space: nowrap
+  overflow: hidden
+
+  &:hover
+    flex: 2 0 topbar-height
+    padding: 0.5em 0
+    overflow: inherit
+    white-space: normal
 
 .topic-msg
   align-self: center
   padding: 0 0.5em
-  white-space: nowrap
-  overflow: hidden
+  overflow: inherit
   text-overflow: ellipsis
 </style>
