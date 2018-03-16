@@ -5,7 +5,6 @@
   <section class="list-content">
     <ul>
       <li class="server">
-        <font-awesome-icon :icon="server"/>
         <span class="server-name">FyreChat</span>
         <ul>
           <li class="channel">#vana</li>
@@ -13,7 +12,6 @@
         </ul>
       </li>
       <li class="server">
-        <font-awesome-icon :icon="server"/>
         <span class="server-name">PdgnCo</span>
         <ul>
           <li class="channel current">#pdgn</li>
@@ -21,7 +19,6 @@
         </ul>
       </li>
       <li class="server">
-        <font-awesome-icon :icon="server"/>
         <span class="server-name">Freenode</span>
         <ul>
           <li class="channel">#`</li>
@@ -34,7 +31,6 @@
         </ul>
       </li>
       <li class="server">
-        <font-awesome-icon :icon="server"/>
         <span class="server-name">Mozilla</span>
         <ul>
           <li class="channel">#rust</li>
@@ -48,21 +44,8 @@
 </template>
 
 <script>
-import FontAwesomeIcon from '@fortawesome/vue-fontawesome'
-import { faServer } from '@fortawesome/fontawesome-free-solid'
-
 export default {
-  name: 'ServerList',
-
-  components: {
-    FontAwesomeIcon
-  },
-
-  computed: {
-    server () {
-      return faServer
-    }
-  }
+  name: 'ServerList'
 }
 </script>
 
