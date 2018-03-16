@@ -47,6 +47,7 @@ export default {
 #buffer-content
   height: 100%
   align-self: end
+  overflow-x: hidden
   overflow-y: scroll
   margin: 0.2em
   padding: 0.5em 2em
