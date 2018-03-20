@@ -4,22 +4,23 @@
   </div>
   <section class="list-content">
     <ul>
-      <li class="server">
-        <span class="server-name">FyreChat</span>
+      <router-link to="/server/FyreChat"><li class="server">FyreChat</li></router-link>
+      <li class="channels">
         <ul>
-          <li class="channel">#vana</li>
-          <li class="channel">#vana-commits</li>
+          <router-link to="/chan/vana"><li class="channel">#vana</li></router-link>
+          <router-link to="/chan/vana-commits"><li class="channel">#vana-commits</li></router-link>
         </ul>
       </li>
-      <li class="server">
-        <span class="server-name">PdgnCo</span>
+      <router-link to="/server/PdgnCo"><li class="server">PdgnCo</li></router-link>
+      <li class="channels">
         <ul>
-          <li class="channel current">#pdgn</li>
-          <li class="channel">#merveille</li>
+          <router-link to="/chan/pdgn"><li class="channel">#pdgn</li></router-link>
+          <router-link to="/chan/merveille"><li class="channel">#merveille</li></router-link>
+          <router-link to="/query/big_meech"><li class="channel">big_meech</li></router-link>
         </ul>
       </li>
-      <li class="server">
-        <span class="server-name">Freenode</span>
+      <router-link to="/server/Freenode"><li class="server">Freenode</li></router-link>
+      <li class="channels">
         <ul>
           <li class="channel">#`</li>
           <li class="channel">##yulli</li>
@@ -30,8 +31,8 @@
           <li class="channel">#pijul</li>
         </ul>
       </li>
-      <li class="server">
-        <span class="server-name">Mozilla</span>
+      <router-link to="/server/Mozilla"><li class="server">Mozilla</li></router-link>
+      <li class="channels">
         <ul>
           <li class="channel">#rust</li>
           <li class="channel">#rust-offtopic</li>
@@ -61,6 +62,10 @@ export default {
 #server-list
   background: sidebar-bg-color
 
+  a, a:visited
+    color: inherit
+    text-decoration: none
+
   .list-content
     max-height: "calc(100vh - %s - %s)" % topbar-components
     overflow-y: scroll
@@ -72,27 +77,31 @@ export default {
     margin: 1em 0.5em
     color: #aaa
 
-    li.server
+    li.channels
+      margin-top: -0.3em
       margin-bottom: 1em
       white-space: nowrap
       text-overflow: ellipsis
+
+    li.server
+      padding: 0.5em
 
     ul
       margin: 0.5em 0
 
       li.channel
-        padding: 0.5em
+        padding: 0.5em 1em
         margin: 0.2em 0
 
-.channel
+.channel, .server
   border-radius: 0.2em
 
   &:hover
     background: #353940
     color: #bbb
 
-  &.current
-    font-weight: bold
-    background: #3C4148
-    color: #ccc
+.router-link-active .channel, .router-link-active .server
+  font-weight: bold
+  background: #3C4148
+  color: #ccc
 </style>
