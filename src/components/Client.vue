@@ -1,8 +1,8 @@
 <template>
-  <section id="client-ui">
-    <ServerList/>
-    <BufferView/>
-  </section>
+<section id="client-ui">
+  <ServerList/>
+  <BufferView/>
+</section>
 </template>
 
 <script>
