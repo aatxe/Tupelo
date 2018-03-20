@@ -22,21 +22,21 @@
       <router-link to="/server/Freenode"><li class="server">Freenode</li></router-link>
       <li class="channels">
         <ul>
-          <li class="channel">#`</li>
-          <li class="channel">##yulli</li>
-          <li class="channel">#prl</li>
-          <li class="channel">#ircv3</li>
-          <li class="channel">#idris</li>
-          <li class="channel">#scuttlebutt</li>
-          <li class="channel">#pijul</li>
+          <router-link to="/chan/`"><li class="channel">#`</li></router-link>
+          <router-link to="/chan/%23yulli"><li class="channel">##yulli</li></router-link>
+          <router-link to="/chan/prl"><li class="channel">#prl</li></router-link>
+          <router-link to="/chan/ircv3"><li class="channel">#ircv3</li></router-link>
+          <router-link to="/chan/idris"><li class="channel">#idris</li></router-link>
+          <router-link to="/chan/scuttlebutt"><li class="channel">#scuttlebutt</li></router-link>
+          <router-link to="/chan/pijul"><li class="channel">#pijul</li></router-link>
         </ul>
       </li>
       <router-link to="/server/Mozilla"><li class="server">Mozilla</li></router-link>
       <li class="channels">
         <ul>
-          <li class="channel">#rust</li>
-          <li class="channel">#rust-offtopic</li>
-          <li class="channel">#rust-irc</li>
+          <router-link to="/chan/rust"><li class="channel">#rust</li></router-link>
+          <router-link to="/chan/rust-offtopic"><li class="channel">#rust-offtopic</li></router-link>
+          <router-link to="/chan/rust-irc"><li class="channel">#rust-irc</li></router-link>
         </ul>
       </li>
     </ul>
