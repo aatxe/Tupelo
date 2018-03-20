@@ -71,6 +71,12 @@ export default {
     overflow-y: scroll
     margin: 0 0.2em
 
+  li
+    max-width: max-server-width
+    overflow: hidden;
+    white-space: nowrap
+    text-overflow: ellipsis
+
   ul
     list-style: none
     padding: 0
@@ -80,8 +86,6 @@ export default {
     li.channels
       margin-top: -0.3em
       margin-bottom: 1em
-      white-space: nowrap
-      text-overflow: ellipsis
 
     li.server
       padding: 0.5em
@@ -101,7 +105,6 @@ export default {
     color: #bbb
 
 .router-link-active .channel, .router-link-active .server
-  font-weight: bold
   background: #3C4148
-  color: #ccc
+  color: #ddd
 </style>
