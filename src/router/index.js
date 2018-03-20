@@ -6,6 +6,7 @@ import ServerView from '@/components/ServerView'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     { path: '/', redirect: '/chan/#pdgn' },
     { path: '/chan/:chan', component: ChannelView, props: { showUserList: true } },
