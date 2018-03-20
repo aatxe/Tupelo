@@ -1,6 +1,5 @@
 <template>
 <section id="chat-buffer">
-  <Topic/>
   <section id="buffer-content">
     <div class="message" v-for="msg in messages" :key="msg.id">
       <span class="message-time">{{ msg.time }}</span>
@@ -13,15 +12,13 @@
 </template>
 
 <script>
-import Topic from '@/components/buffers/Topic'
 import ChatInput from '@/components/buffers/ChatInput'
 
 export default {
   name: 'ChatBuffer',
 
   components: {
-    ChatInput,
-    Topic
+    ChatInput
   },
 
   data: function () {
@@ -39,8 +36,6 @@ export default {
 
 #chat-buffer
   background: buffer-bg-color
-  -webkit-app-region: no-drag
-  height: 100vh
   display: flex
   flex-direction: column
 
