@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import Topic from '@/components/Topic'
-import ChatInput from '@/components/ChatInput'
+import Topic from '@/components/buffers/Topic'
+import ChatInput from '@/components/buffers/ChatInput'
 
 export default {
   name: 'ChatBuffer',
@@ -35,7 +35,7 @@ export default {
 </script>
 
 <style lang="stylus">
-@require '../vars'
+@require '../../vars'
 
 #chat-buffer
   background: buffer-bg-color

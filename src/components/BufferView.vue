@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import ChatBuffer from '@/components/ChatBuffer'
-import UserList from '@/components/UserList'
+import ChatBuffer from '@/components/buffers/ChatBuffer'
+import UserList from '@/components/buffers/UserList'
 
 export default {
   name: 'BufferView',

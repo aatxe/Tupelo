@@ -32,7 +32,7 @@ export default {
 </script>
 
 <style lang="stylus">
-@require '../vars'
+@require '../../vars'
 
 #user-list-gutter
   display: grid

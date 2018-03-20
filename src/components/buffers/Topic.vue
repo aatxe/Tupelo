@@ -14,7 +14,7 @@ export default {
 </script>
 
 <style lang="stylus">
-@require '../vars'
+@require '../../vars'
 
 #topic
   display: grid
