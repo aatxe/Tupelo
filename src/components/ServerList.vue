@@ -60,6 +60,7 @@ export default {
   box-shadow: 0 1px 1px topbar-shadow-color
 
 #server-list
+  color: sidebar-fg-color
   background: sidebar-bg-color
 
   a, a:visited
@@ -81,7 +82,6 @@ export default {
     list-style: none
     padding: 0
     margin: 1em 0.5em
-    color: #aaa
 
     li.channels
       margin-top: -0.3em
@@ -101,10 +101,10 @@ export default {
   border-radius: 0.2em
 
   &:hover
-    background: #353940
-    color: #bbb
+    background: hover-buffer-bg-color
+    color: hover-buffer-fg-color
 
 .router-link-active .channel, .router-link-active .server
-  background: #3C4148
-  color: #ddd
+  background: active-buffer-bg-color
+  color: active-buffer-fg-color
 </style>

@@ -18,6 +18,8 @@ export default {
 </script>
 
 <style lang="stylus">
+@require 'vars'
+
 html, body, #app
   height: 100vh
   width: 100vw
@@ -29,7 +31,7 @@ html, body, #app
   font-family: 'Avenir', Helvetica, Arial, sans-serif
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
-  color: #ccc
+  color: base-fg-color
 
 ::-webkit-scrollbar
   width: 0.5em
@@ -37,10 +39,9 @@ html, body, #app
 ::-webkit-scrollbar-track
   margin-top: 0.2em
   border-radius: 10px
-  background-color: #2F3136
+  background-color: scrollbar-track-color
 
 ::-webkit-scrollbar-thumb
   border-radius: 1em
-  background-color: #171B1D
-  outline: 1em solid #35393F
+  background-color: scrollbar-thumb-color
 </style>

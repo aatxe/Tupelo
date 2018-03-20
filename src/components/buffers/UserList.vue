@@ -39,7 +39,7 @@ export default {
   background: topbar-bg-color
   height: topbar-height
   border-bottom: topbar-border solid topbar-bg-color
-  box-shadow: 0 1px 1px #323439
+  box-shadow: 0 1px 1px topbar-shadow-color
 
 #user-list
   background: sidebar-bg-color
@@ -74,32 +74,32 @@ export default {
     border-radius: 0.3em
     width: 1.2em
     height: 1.2em
-    background: #ccc
-    color: white
+    background: role-none-color
+    color: role-symbol-color
     font-weight: bold
 
   .role-voice
-    background: #0099E0
+    background: role-voice-color
     &::after
       content: '+'
 
   .role-halfop
-    background: #0099E0
+    background: role-halfop-color
     &::after
       content: '%'
 
   .role-op
-    background: #0099E0
+    background: role-op-color
     &::after
       content: '@'
 
   .role-admin
-    background: #0099E0
+    background: role-admin-color
     &::after
       content: '&'
 
   .role-owner
-    background: #0099E0
+    background: role-owner-color
     &::after
       content: '~'
 </style>

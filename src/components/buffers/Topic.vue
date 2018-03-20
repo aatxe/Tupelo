@@ -20,7 +20,7 @@ export default {
   display: grid
   flex: 0 0 topbar-height
   background: topic-bg-color
-  border-bottom: topbar-border solid #2A2C30
+  border-bottom: topbar-border solid topbar-border-color
   box-shadow: 0 1px 1px topbar-shadow-color
   white-space: nowrap
   overflow: hidden

@@ -28,5 +28,5 @@ export default {
     outline: none
 
   &::placeholder
-    color: #aaa
+    color: placeholder-fg-color
 </style>
