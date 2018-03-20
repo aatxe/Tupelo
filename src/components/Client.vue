@@ -1,19 +1,19 @@
 <template>
 <section id="client-ui">
   <ServerList/>
-  <BufferView/>
+  <ChannelView/>
 </section>
 </template>
 
 <script>
-import BufferView from '@/components/BufferView'
+import ChannelView from '@/components/ChannelView'
 import ServerList from '@/components/ServerList'
 
 export default {
   name: 'Client',
 
   components: {
-    BufferView,
+    ChannelView,
     ServerList
   }
 }

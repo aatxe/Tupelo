@@ -10,7 +10,7 @@ import ChatBuffer from '@/components/buffers/ChatBuffer'
 import UserList from '@/components/buffers/UserList'
 
 export default {
-  name: 'BufferView',
+  name: 'ChannelView',
 
   components: {
     ChatBuffer,
