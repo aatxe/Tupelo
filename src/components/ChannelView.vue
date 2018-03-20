@@ -1,10 +1,10 @@
 <template>
-<section id="channel-view">
+<section id="channel-view" v-bind:class="{ 'with-user-list': showUserList }">
   <section id="buffer-view">
     <Topic/>
     <ChatBuffer/>
   </section>
-  <UserList/>
+  <UserList v-if="showUserList"/>
 </section>
 </template>
 
@@ -16,6 +16,8 @@ import UserList from '@/components/buffers/UserList'
 export default {
   name: 'ChannelView',
 
+  props: ['showUserList'],
+
   components: {
     ChatBuffer,
     Topic,
@@ -25,9 +27,13 @@ export default {
 </script>
 
 <style lang="stylus">
+@require '../vars'
+
 #channel-view
   height: 100vh
   display: grid
+
+#channel-view.with-user-list
   grid-template-columns: 6fr 1fr;
 
 #buffer-view

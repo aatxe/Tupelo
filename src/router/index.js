@@ -8,7 +8,7 @@ Vue.use(Router)
 export default new Router({
   routes: [
     { path: '/', redirect: '/chan/#pdgn' },
-    { path: '/chan/:chan', component: ChannelView },
+    { path: '/chan/:chan', component: ChannelView, props: { showUserList: true } },
     { path: '/server/:server', component: ServerView }
   ]
 })
