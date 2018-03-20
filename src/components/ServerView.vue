@@ -1,6 +1,8 @@
 <template>
 <section id="server-view">
-  <ChatBuffer/>
+  <section id="buffer-view">
+    <ChatBuffer/>
+  </section>
 </section>
 </template>
 
@@ -17,7 +19,15 @@ export default {
 </script>
 
 <style lang="stylus">
+@require '../vars'
+
 #server-view
   height: 100vh
   display: grid
+
+#buffer-view
+  -webkit-app-region: no-drag
+  height: 100vh
+  display: flex
+  flex-direction: column
 </style>
