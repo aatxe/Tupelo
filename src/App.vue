@@ -28,7 +28,8 @@ html, body, #app
   -webkit-app-region: drag
 
 #app
-  font-family: 'Avenir', Helvetica, Arial, sans-serif
+  font-family: 'Source Sans Pro', 'Avenir', Helvetica, Arial, sans-serif
+  font-size: 16px
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
   color: base-fg-color
