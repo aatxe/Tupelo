@@ -1,0 +1,13 @@
+[package]
+name = "pdgnc"
+description = "an irc client"
+version = "0.0.0"
+authors = ["Aaron Weiss <awe@pdgn.co>"]
+
+[dependencies]
+web-view = "0.2"
+
+[package.metadata.bundle]
+name = "pdgnc"
+identifier = "us.aaronweiss.pdgnc"
+resources = ["dist"]
