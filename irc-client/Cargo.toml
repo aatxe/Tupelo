@@ -1,6 +1,8 @@
 [package]
 name = "irc-client"
-version = "0.1.0"
+version = "0.0.0"
 authors = ["Aaron Weiss <awe@pdgn.co>"]
 
 [dependencies]
+irc = "0.13"
+websocket = "0.20"
