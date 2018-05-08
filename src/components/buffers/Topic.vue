@@ -18,7 +18,7 @@ export default {
 
 #topic
   display: grid
-  flex: 0 0 topbar-height
+  flex: 0 0 topic-height
   background: topic-bg-color
   border-bottom: topbar-border solid topbar-border-color
   box-shadow: 0 1px 1px topbar-shadow-color
@@ -26,14 +26,14 @@ export default {
   overflow: hidden
 
   &:hover
-    flex: 2 0 topbar-height
+    flex: 2 0 topic-height
     padding: 0.5em 0
     overflow: inherit
     white-space: normal
 
 .topic-msg
   align-self: center
-  padding: 0 0.5em
+  padding: 0.2em 0.5em
   overflow: inherit
   text-overflow: ellipsis
 </style>
