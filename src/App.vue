@@ -27,6 +27,9 @@ html, body, #app
   grid-template-columns: 1fr 6fr
   -webkit-app-region: drag
 
+html
+  overflow: hidden
+
 #app
   font-family: 'Source Sans Pro', 'Avenir', Helvetica, Arial, sans-serif
   font-size: 16px
