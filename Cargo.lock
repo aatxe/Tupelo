@@ -1,4 +1,8 @@
 [[package]]
+name = "asset-server"
+version = "0.1.0"
+
+[[package]]
 name = "bitflags"
 version = "1.0.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -14,9 +18,15 @@ version = "1.0.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
+name = "irc-client"
+version = "0.1.0"
+
+[[package]]
 name = "pdgnc"
 version = "0.0.0"
 dependencies = [
+ "asset-server 0.1.0",
+ "irc-client 0.1.0",
  "web-view 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
