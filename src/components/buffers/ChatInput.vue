@@ -23,6 +23,7 @@ export default {
   padding: (input-area-padding / 2) 1em
   border-radius: 0.3em
   background: input-bg-color
+  color: input-fg-color
 
   &:focus
     outline: none
