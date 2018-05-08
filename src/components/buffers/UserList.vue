@@ -5,7 +5,7 @@
   <section class="list-content">
     <ul>
       <li class="user">
-        <div class="role role-voice"></div>
+        <div class="role role-voice role-owner"></div>
         <div class="nickname">awe</div>
       </li>
       <li class="user">

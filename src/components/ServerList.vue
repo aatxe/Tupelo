@@ -74,7 +74,7 @@ export default {
 
   li
     max-width: max-server-width
-    overflow: hidden;
+    overflow: hidden
     white-space: nowrap
     text-overflow: ellipsis
 
