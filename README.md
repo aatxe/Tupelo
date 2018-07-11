@@ -1,6 +1,4 @@
-<div style="text-align: center; width: 256px">
-  ![Tupelo logo](logo/tupelo.svg)
-</div>
+<p align="center"><img src="https://raw.githubusercontent.com/aatxe/Tupelo/master/logo/tupelo.png" width="256px"></p>
 
 # Tupelo
 
