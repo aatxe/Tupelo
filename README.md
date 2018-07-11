@@ -4,6 +4,8 @@
 
 > irc for the web, powered by rust
 
+**Note**: This is very much early work-in-progress. At the time of this writing, it is just a UI. It will hopefully soon be connected to a backend websockets server powered by [the irc crate](https://github.com/aatxe/irc).
+
 ## Build Setup
 
 ``` bash
