@@ -501,15 +501,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "pdgnc"
-version = "0.0.0"
-dependencies = [
- "asset-server 0.0.0",
- "irc-client 0.0.0",
- "web-view 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
-]
-
-[[package]]
 name = "percent-encoding"
 version = "1.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -873,6 +864,15 @@ dependencies = [
 name = "traitobject"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "tupelo"
+version = "0.0.0"
+dependencies = [
+ "asset-server 0.0.0",
+ "irc-client 0.0.0",
+ "web-view 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
 
 [[package]]
 name = "typeable"

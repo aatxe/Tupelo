@@ -1,4 +1,8 @@
-# pdgnc
+<div style="text-align: center; width: 256px">
+  ![Tupelo logo](logo/tupelo.svg)
+</div>
+
+# Tupelo
 
 > irc for the web, powered by rust
 
@@ -29,7 +33,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ## License
 
 ```
-pdgnc - IRC for the web, powered by Rust.
+Tupelo - IRC for the web, powered by Rust.
 Copyright (C) 2018 Aaron Weiss
 
 This program is free software: you can redistribute it and/or modify

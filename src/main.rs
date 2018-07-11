@@ -10,7 +10,7 @@ fn main() {
 	let frontend_cb = |_webview: &mut _, _arg: &_, _userdata: &mut _| {};
 	let userdata = ();
 	run(
-		"pdgnc",
+		"Tupelo",
 		Content::Url("http://localhost:8080/"),
 		Some(size),
 		resizable,

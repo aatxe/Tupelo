@@ -1,5 +1,5 @@
 [package]
-name = "pdgnc"
+name = "tupelo"
 description = "an irc client"
 version = "0.0.0"
 authors = ["Aaron Weiss <awe@pdgn.co>"]
@@ -13,6 +13,6 @@ irc-client = { version = "*", path = "irc-client" }
 web-view = "0.2"
 
 [package.metadata.bundle]
-name = "pdgnc"
-identifier = "us.aaronweiss.pdgnc"
+name = "tupelo"
+identifier = "app.tupelo"
 resources = ["dist"]
