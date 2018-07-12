@@ -91,7 +91,7 @@ pre code {
 
 html, body, #splash, #splash-content {
   height: 100%;
-  background: #ecf0f1;
+  background: #ffffff;
 }
 
 #splash {
@@ -116,5 +116,5 @@ html, body, #splash, #splash-content {
 
 .title {
     font-size: 4em;
-    color: #C33358;
+    color: #eb2f06;
 }
