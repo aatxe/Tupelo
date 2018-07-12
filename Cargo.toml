@@ -10,7 +10,7 @@ members = [ "./", "irc-client", "asset-server" ]
 [dependencies]
 asset-server = { version = "*", path = "asset-server" }
 irc-client = { version = "*", path = "irc-client" }
-web-view = "0.2"
+web-view = { git = "https://github.com/Boscop/web-view" }
 
 [package.metadata.bundle]
 name = "tupelo"
